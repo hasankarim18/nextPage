@@ -1,0 +1,26 @@
+.main_nav{
+ 
+    transition-duration: 0.9s;
+    z-index: 20;
+}
+
+.nav_open{
+    top:4rem;
+    background-color: black;
+    color:white;
+    width: 100%;
+    left:0;
+    padding-bottom: 20px;
+    z-index: 10;
+
+}
+
+.nav_close{
+    top:-104rem;
+    background-color: black;
+    color:white;
+    width: 100%;
+    left:0;
+    padding-bottom: 20px;
+    z-index: -10;
+}
