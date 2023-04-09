@@ -12,20 +12,21 @@ const router = createBrowserRouter([
   {
     path: "/",
     element: <App />,
-    errorElement:<ErrorPage />,
+    errorElement: <ErrorPage />,
     children: [
       {
         path: "/",
         element: <Home />,
       },
       {
-        path:"/about",
-        element:<About />
+        path: "/about",
+        element: <About />,
       },
       {
-        path:'/books',
-        element: <Books />
-      }
+        path: "/books",
+        element: <Books />,
+        loader: () => fetch("https://api.itbook.store/1.0/new"),
+      },
     ],
   },
 ]);
