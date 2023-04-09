@@ -3,10 +3,11 @@
 A simple React app built with React & React Router Dom.
 
 ## Complete Project
-Github Repo -> [nextPage-complete](https://github.com/shakilahmedatik/nextPage-complete)
+Github Repo -> [nextPage-complete](https://github.com/hasankarim18/nextPage)
+
 
 ## Live Link
-Hosted in Netlify -> [nextPage](https://next-page.netlify.app/)
+Hosted in Netlify -> [nextPage](https://astounding-melomakarona-7a9bcc.netlify.app/)
 
 ## API 
 Documentation Link -> [It Bookstore API](https://api.itbook.store/)
