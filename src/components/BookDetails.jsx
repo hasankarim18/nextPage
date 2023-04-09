@@ -11,7 +11,7 @@ const BookDetails = () => {
    if (navigation.state === "loading") {  
      return <LoadingSpinner />;
    }
-     console.log(navigation.state);
+    
     const bookData = useLoaderData();
  
    const { image, title, desc, authors, publisher, year, rating, url, price } =
