@@ -26,3 +26,13 @@
 .default{
   @apply font-medium tracking-wide text-gray-700 transition-colors duration-200 hover:text-blue-400
 }
+
+.books_card{
+  @apply overflow-hidden relative rounded-md;
+box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
+}
+
+.books_card:hover {
+  @apply transition duration-500 transform hover:-translate-y-2
+}
+

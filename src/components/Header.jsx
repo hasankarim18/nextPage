@@ -90,7 +90,7 @@ const MobileMenu = ({ isMenuOpen, menu }) => {
   return (
     <div className="relative">
       <nav
-        className={`absolute pt-4 duration-300 bg-blue-500 text-white md:hidden  pl-4 md:pl-0 block mobile menu 
+        className={`absolute pt-4 duration-300 bg-black bg-opacity-70  text-white md:hidden  pl-4 md:pl-0 block mobile menu 
             ${
               isMenuOpen
                 ? "top-0 left-0 w-full z-20  pb-4"
@@ -106,8 +106,8 @@ const MobileMenu = ({ isMenuOpen, menu }) => {
                   <NavLink
                     className={({ isActive }) =>
                       isActive
-                        ? "text-black hover:text-black font-semibold"
-                        : "hover:text-black"
+                        ? "text-blue-500 hover:text-blue-400 font-semibold"
+                        : "hover:text-blue-400"
                     }
                     to={item.route}
                   >
