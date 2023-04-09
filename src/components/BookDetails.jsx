@@ -1,15 +1,24 @@
 import React, { useState } from "react";
 import { useLoaderData, useNavigation } from "react-router-dom";
+import LoadingSpinner from "./LoadingSpinner";
 // import LoadingSpinner from "./LoadingSpinner";
 
 const BookDetails = () => {
-  const bookData = useLoaderData();
+ 
    const [fold, setFold] = useState(true);
+   const navigation = useNavigation()
+
+   if (navigation.state === "loading") {  
+     return <LoadingSpinner />;
+   }
+     console.log(navigation.state);
+    const bookData = useLoaderData();
  
    const { image, title, desc, authors, publisher, year, rating, url, price } =
      bookData;
   return (
     <div className="my-container">
+       
       {/* Container Box */}
       <div className="flex flex-col max-w-screen-lg overflow-hidden bg-white border rounded shadow-sm lg:flex-row sm:mx-auto">
         {/* Image Container */}
